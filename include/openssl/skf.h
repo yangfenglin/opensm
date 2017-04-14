@@ -361,7 +361,7 @@ ULONG DEVAPI SKF_CreateFile(
 	ULONG ulReadRights,
 	ULONG ulWriteRights);
 
-ULONG DEVAPI SKF_DeleteFile(
+ULONG DEVAPI SKF_DeleteFileInfo(
 	HAPPLICATION hApplication,
 	LPSTR szFileName);
 

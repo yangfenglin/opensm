@@ -532,8 +532,8 @@ typedef struct skf_method_st {
 	SKF_DeleteApplication_FuncPtr DeleteApplication;
 	SKF_OpenApplication_FuncPtr OpenApplication;
 	SKF_CloseApplication_FuncPtr CloseApplication;
-	SKF_CreateFile_FuncPtr CreateFile;
-	SKF_DeleteFile_FuncPtr DeleteFile;
+	SKF_CreateFile_FuncPtr CreateFileInfo;
+	SKF_DeleteFile_FuncPtr DeleteFileInfo;
 	SKF_EnumFiles_FuncPtr EnumFiles;
 	SKF_GetFileInfo_FuncPtr GetFileInfo;
 	SKF_ReadFile_FuncPtr ReadFile;

@@ -87,8 +87,8 @@ SKF_METHOD *SKF_METHOD_load_library(const char *so_path)
 	skf->DeleteApplication = (SKF_DeleteApplication_FuncPtr)DSO_bind_func(dso, "SKF_DeleteApplication");
 	skf->OpenApplication = (SKF_OpenApplication_FuncPtr)DSO_bind_func(dso, "SKF_OpenApplication");
 	skf->CloseApplication = (SKF_CloseApplication_FuncPtr)DSO_bind_func(dso, "SKF_CloseApplication");
-	skf->CreateFile = (SKF_CreateFile_FuncPtr)DSO_bind_func(dso, "SKF_CreateFile");
-	skf->DeleteFile = (SKF_DeleteFile_FuncPtr)DSO_bind_func(dso, "SKF_DeleteFile");
+	skf->CreateFileInfo = (SKF_CreateFile_FuncPtr)DSO_bind_func(dso, "SKF_CreateFileInfo");
+	skf->DeleteFileInfo = (SKF_DeleteFile_FuncPtr)DSO_bind_func(dso, "SKF_DeleteFileInfo");
 	skf->EnumFiles = (SKF_EnumFiles_FuncPtr)DSO_bind_func(dso, "SKF_EnumFiles");
 	skf->GetFileInfo = (SKF_GetFileInfo_FuncPtr)DSO_bind_func(dso, "SKF_GetFileInfo");
 	skf->ReadFile = (SKF_ReadFile_FuncPtr)DSO_bind_func(dso, "SKF_ReadFile");

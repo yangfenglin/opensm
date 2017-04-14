@@ -393,8 +393,8 @@ ULONG DEVAPI SKF_CreateFile(
 	ULONG ulReadRights,
 	ULONG ulWriteRights)
 {
-	if (skf_method->CreateFile) {
-		return skf_method->CreateFile(
+	if (skf_method->CreateFileInfo) {
+		return skf_method->CreateFileInfo(
 			hApplication,
 			szFileName,
 			ulFileSize,
@@ -404,12 +404,12 @@ ULONG DEVAPI SKF_CreateFile(
 	return SAR_NOTSUPPORTYETERR;
 }
 
-ULONG DEVAPI SKF_DeleteFile(
+ULONG DEVAPI SKF_DeleteFileInfo(
 	HAPPLICATION hApplication,
 	LPSTR szFileName)
 {
-	if (skf_method->DeleteFile) {
-		return skf_method->DeleteFile(
+	if (skf_method->DeleteFileInfo) {
+		return skf_method->DeleteFileInfo(
 			hApplication,
 			szFileName);
 	}
