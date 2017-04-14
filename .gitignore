@@ -177,3 +177,14 @@ crypto/opensslconf.h
 tool/c_rehash
 # exec file
 apps/gmssl
+compile.txt
+opensm.IAB
+opensm.IAD
+opensm.IMB
+opensm.IMD
+opensm.PFI
+opensm.PO
+opensm.PR
+opensm.PRI
+opensm.PS
+opensm.WK3
