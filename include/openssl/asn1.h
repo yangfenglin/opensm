@@ -721,6 +721,9 @@ int ASN1_i2d_fp(i2d_of_void *i2d, FILE *out, void *x);
                  CHECKED_PTR_OF(const type, x)))
 
 int ASN1_item_i2d_fp(const ASN1_ITEM *it, FILE *out, void *x);
+int X509_NAME_print_ex_fp(FILE *fp, const X509_NAME *nm, int indent,
+                          unsigned long flags);
+
 int ASN1_STRING_print_ex_fp(FILE *fp, const ASN1_STRING *str, unsigned long flags);
 # endif
 

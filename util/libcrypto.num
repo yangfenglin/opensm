@@ -3549,7 +3549,7 @@ OPENSSL_strlcat                         3501	1_1_0	EXIST::FUNCTION:
 X509_VERIFY_PARAM_new                   3502	1_1_0	EXIST::FUNCTION:
 BIO_ADDR_rawport                        3503	1_1_0	EXIST::FUNCTION:SOCK
 BUF_MEM_grow_clean                      3504	1_1_0	EXIST::FUNCTION:
-X509_NAME_print_ex_fp                   3505	1_1_0	NOEXIST::FUNCTION:
+X509_NAME_print_ex_fp                   3505	1_1_0	EXIST::FUNCTION:
 X509_check_host                         3506	1_1_0	EXIST::FUNCTION:
 PEM_read_ECPKParameters                 3507	1_1_0	EXIST::FUNCTION:EC,STDIO
 X509_ATTRIBUTE_get0_data                3508	1_1_0	EXIST::FUNCTION:
