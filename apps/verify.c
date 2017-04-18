@@ -23,6 +23,11 @@ static int check(X509_STORE *ctx, const char *file,
                  STACK_OF(X509_CRL) *crls, int show_chain);
 static int v_verbose = 0, vflags = 0;
 
+#ifndef OPENSSL_NO_STDIO
+extern int X509_NAME_print_ex_fp(FILE *fp, const X509_NAME *nm, int indent,
+                          unsigned long flags);
+#endif
+
 typedef enum OPTION_choice {
     OPT_ERR = -1, OPT_EOF = 0, OPT_HELP,
     OPT_ENGINE, OPT_CAPATH, OPT_CAFILE, OPT_NOCAPATH, OPT_NOCAFILE,
