@@ -1232,12 +1232,12 @@ int SDF_CreateFile(
 {
 	int ret = SDR_UNKNOWERR;
 
-	if (!sdf_method || !sdf_method->CreateFile) {
+	if (!sdf_method || !sdf_method->CreateFileInfo) {
 		SDFerr(SDF_F_SDF_CREATEFILE, SDF_R_NOT_INITIALIZED);
 		return SDR_NOTSUPPORT;
 	}
 
-	if ((ret = sdf_method->CreateFile(
+	if ((ret = sdf_method->CreateFileInfo(
 		hSessionHandle,
 		pucFileName,
 		uiNameLen,
