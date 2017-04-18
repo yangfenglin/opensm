@@ -4929,3 +4929,7 @@ SM2CiphertextValue_set_ECCCipher        4873	1_1_0d	EXIST::FUNCTION:
 SM2CiphertextValue_get_ECCCIPHERBLOB    4874	1_1_0d	EXIST::FUNCTION:
 ECIES_PARAMS_init_with_type             4875	1_1_0d	EXIST::FUNCTION:
 BN_GFP2_one                             4876	1_1_0d	EXIST::FUNCTION:
+speck_expand							4877	1_1_0d  EXIST::FUNCTION:
+speck_set_encrypt_key					4878	1_1_0d  EXIST::FUNCTION:
+speck_encrypt							4879	1_1_0d  EXIST::FUNCTION:
+speck_decrypt							4880	1_1_0d  EXIST::FUNCTION:
