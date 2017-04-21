@@ -343,6 +343,7 @@ $crypto.=" include/openssl/sms4.h";
 $crypto.=" include/openssl/sof.h";
 $crypto.=" include/openssl/ssf33.h";
 $crypto.=" include/openssl/zuc.h";
+$crypto.=" include/openssl/speck.h";
 
 my $symhacks="include/openssl/symhacks.h";
 
