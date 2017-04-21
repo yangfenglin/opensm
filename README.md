@@ -27,9 +27,13 @@ GmSSL是一个开源的密码工具箱，支持SM2/SM3/SM4/SM9等国密(国家�
 
    Windwos平台
    ```sh
-   安装dmake : ppm install dmake
-   配置编译  : perl configure VC-WIN32
-   编译      : nmake
+   1. 安装ActivePerl
+   2. 安装dmake 
+   ppm install dmake
+   3. 配置编译
+   perl configure VC-WIN32
+   4. 编译
+   nmake
    ```
    
    Linux平台（其他平台的安装过程见[编译与安装](http://gmssl.org)）
